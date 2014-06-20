@@ -42,6 +42,9 @@ $(function () {
  
     $('div[data-role="page"]').live('pagebeforeshow', function (event, ui) {
         menuStatus = false;
+        //=== I need to put this to avoid flik problem :-/
+        $('#menu').hide();
+        //===
         $(".pages").css("margin-left", "0");
     });
  
